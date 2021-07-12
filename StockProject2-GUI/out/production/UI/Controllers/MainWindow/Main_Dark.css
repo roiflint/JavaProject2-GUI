@@ -1,0 +1,90 @@
+#hbox{
+-fx-background-color: #1e2124;
+}
+
+#TabPaneID{-fx-background-color: #1e2124;
+}
+
+.radio-button{
+-fx-font-family: Courier New;
+-fx-font-size: 16;
+-fx-text-fill: #7289da;
+}
+
+#TabPaneID{
+    -fx-background-color: #1e2124;
+}
+.tab-header-background {
+    -fx-background-color: #1e2124;
+    -fx-border-color: #424549;
+}
+.tab {
+    -fx-font-family: Courier New;
+    -fx-font-size: 16;
+    -fx-background-color: #282b30;
+    -fx-text-base-color: #7289da;
+}
+
+.tab:selected {
+    -fx-background-color: #424549;
+    -fx-border-width: 0;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #7289da;
+}
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    -fx-font-size: 12;
+}
+.table-view .cell{
+    -fx-cell-size: 35;
+    -fx-alignment: center;
+    -fx-background-color: #65737e;
+    -fx-border-color: #29292D;
+    -fx-text-fill: #7289da;
+    -fx-alignment: CENTER;
+    -fx-font-size: 12;
+}
+
+
+.button{
+    -fx-background-color:
+            #090a0c,
+            linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+            linear-gradient(#20262b, #191d22),
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 5 10 5 10;
+    -fx-cursor: hand;
+}
+
+.label{
+    -fx-font-family: Courier New;
+    -fx-font-size: 16;
+    -fx-text-fill: #7289da;
+}
+
+.choice-box{
+    -fx-background-color: #2f3136;
+}
+
+.text-field{
+    -fx-cursor: TEXT;
+    -fx-background-color: #2f3136;
+    -fx-text-fill: #7289da;
+}
+
+#TransactionMessageLabel{
+    -fx-text-fill: red;
+    -fx-font-size: 16;
+}

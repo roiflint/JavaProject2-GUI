@@ -1,0 +1,82 @@
+#hbox{
+-fx-background-color: #343d46;
+}
+#TabPaneID{-fx-background-color: #343d46;
+}
+
+.radio-button{
+-fx-font-family: initial;
+-fx-font-size: 14;
+-fx-text-fill: #c0c5ce;
+}
+
+#TabPaneID{
+    -fx-background-color: #343d46;
+}
+.tab-header-background {
+    -fx-background-color: #343d46;
+    -fx-border-color: #65737e;
+}
+.tab {
+    -fx-font-family: initial;
+    -fx-font-size: 14;
+    -fx-background-color: #4f5b66;
+    -fx-text-base-color: #0e0f2f;
+}
+
+.tab:selected {
+    -fx-background-color: #a7adba;
+    -fx-border-width: 0;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #65737e;
+}
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    -fx-font-size: 12;
+}
+.table-view .cell{
+    -fx-alignment: center;
+    -fx-background-color: #65737e;
+    -fx-border-color: #29292D;
+    -fx-text-fill: #c0c5ce;
+    -fx-alignment: CENTER;
+    -fx-font-size: 12;
+}
+
+.button{
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+    -fx-cursor: hand;
+}
+
+.label{
+    -fx-font-family: initial;
+    -fx-font-size: 14;
+    -fx-text-fill: #c0c5ce;
+}
+
+.choice-box{
+    -fx-background-color: #898989;
+}
+
+.text-field{
+    -fx-cursor: TEXT;
+    -fx-background-color: #898989;
+    -fx-text-fill: #c0c5ce;
+}
+
+#TransactionMessageLabel{
+    -fx-text-fill: red;
+    -fx-font-size: 16;
+}

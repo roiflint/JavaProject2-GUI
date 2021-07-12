@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="750.0" minWidth="1000.0" prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainWindow.LayoutController">
+   <content>
+      <BorderPane minHeight="740.0" minWidth="980.0" prefHeight="750.0" prefWidth="1000.0">
+         <center>
+            <TabPane id="TabPaneID" fx:id="TabPaneID" minHeight="600.0" minWidth="950.0" prefHeight="200.0" prefWidth="300.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab id="LoadXmlTabID" fx:id="LoadXmlTabID" text="LOAD XML">
+                     <content>
+                        <fx:include fx:id="loadXmlComponent" source="../LoadXmlTab/LoadXml.fxml" />
+                     </content>
+                  </Tab>
+                  <Tab id="TransactionTabID" fx:id="TransactionTabID" closable="false" disable="true" onSelectionChanged="#updateTabsContent" text="TRANSACTION">
+                     <content>
+                        <fx:include fx:id="transactionComponent" source="../TransactionTab/Transaction.fxml" />
+                     </content>
+                  </Tab>
+                  <Tab id="UsersTabID" fx:id="UsersTabID" closable="false" disable="true" text="USERS" >
+                     <content>
+                        <fx:include fx:id="usersComponent" source="../UsersTab/Users.fxml" />
+                     </content>
+                  </Tab>
+                  <Tab id="AdminTabID" fx:id="AdminTabID" closable="false" disable="true" text="ADMIN" >
+                     <content>
+                        <fx:include fx:id="adminComponent" source="../AdminTab/Admin.fxml" />
+                     </content>
+                  </Tab>
+               </tabs></TabPane>
+         </center>
+         <top>
+            <HBox id="hbox" fx:id="hbox" alignment="CENTER_LEFT" minHeight="40.0" minWidth="500.0" prefHeight="40.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <RadioButton id="LightModeRadio" fx:id="LightModeRadio" mnemonicParsing="false" selected="true" text="LIGHT MODE" onAction="#LightMode">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="THEME" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton id="GreyModeRadio" fx:id="GreyModeRadio" mnemonicParsing="false" text="GREY MODE" toggleGroup="$THEME" onAction="#GreyMode"/>
+                  <RadioButton id="DarkModeRadio" fx:id="DarkModeRadio" mnemonicParsing="false" text="DARK MODE" toggleGroup="$THEME" onAction="#DarkMode"/>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </top>
+      </BorderPane>
+   </content>
+</ScrollPane>
